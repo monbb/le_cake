@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>添加蛋糕</h1>
+    <form action="/product/add_cake" method="post">
+        <!-- 下拉选择框 用ajax请求-->
+        蛋糕种类编号：<input type="text" name="family_id"><br>
+        标题：<input type="text" name="title"><br>
+        副标题：<input type="text" name="subtitle"><br>
+        标签：<input type="text" name="tag"><br>
+        备注：<input type="text" name="remark"><br>
+        价格：<input type="text" name="price"><br>
+        商品图：<input type="file" name="pic"><br>
+        广告图：<input type="file" name="lg_pic"><br>
+        <!-- 下拉选择框 -->
+        规格：<input type="text" name="spec"><br>
+        <!-- 下拉选择框 -->
+        餐具：<input type="text" name="tableware"><br>
+        尺寸：<input type="text" name="size"><br>
+        重量：<input type="text" name="weight"><br>
+        甜度：<input type="number" name="sweet" max="4" min="1" step="1" value="1"><br>
+        是否在售：
+        <input type="radio" name="is_onsale" value="1" id="true"><label for="true">是</label>
+        <input type="radio" name="is_onsale" value="0" id="false"><label for="false">否</label>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
